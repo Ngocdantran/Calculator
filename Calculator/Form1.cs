@@ -15,5 +15,10 @@ namespace Calculator
         {
             InitializeComponent();
         }
+
+        private void btncong_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("phép cộng");
+        }
     }
 }
