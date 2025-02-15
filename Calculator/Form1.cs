@@ -19,11 +19,14 @@ namespace Calculator
         private void btncong_Click(object sender, EventArgs e)
         {
             int a, b, kq;
-            a = int.Parse(txtsoa.Text);
-            b = int.Parse(txtsob.Text);
-            kq = a + b;
-            //txtkq.Text = (a + b).ToString();
-            txtkq.Text = kq.ToString();
+            if (txtsoa.Text !=String.Empty)
+            {
+                a = int.Parse(txtsoa.Text);
+                b = int.Parse(txtsob.Text);
+                kq = a + b;
+                //txtkq.Text = (a + b).ToString();
+                txtkq.Text = kq.ToString(); 
+            }
         }
     }
 }
