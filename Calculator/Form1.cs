@@ -18,7 +18,12 @@ namespace Calculator
 
         private void btncong_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("phép cộng");
+            int a, b, kq;
+            a = int.Parse(txtsoa.Text);
+            b = int.Parse(txtsob.Text);
+            kq = a + b;
+            //txtkq.Text = (a + b).ToString();
+            txtkq.Text = kq.ToString();
         }
     }
 }
