@@ -34,6 +34,7 @@
             this.txtsob = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtkq = new System.Windows.Forms.TextBox();
+            this.btncong = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -84,11 +85,22 @@
             this.txtkq.Size = new System.Drawing.Size(100, 20);
             this.txtkq.TabIndex = 1;
             // 
+            // btncong
+            // 
+            this.btncong.Location = new System.Drawing.Point(93, 177);
+            this.btncong.Name = "btncong";
+            this.btncong.Size = new System.Drawing.Size(95, 32);
+            this.btncong.TabIndex = 2;
+            this.btncong.Text = "Cộng";
+            this.btncong.UseVisualStyleBackColor = true;
+            this.btncong.Click += new System.EventHandler(this.btncong_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(562, 297);
+            this.Controls.Add(this.btncong);
             this.Controls.Add(this.txtkq);
             this.Controls.Add(this.txtsob);
             this.Controls.Add(this.txtsoa);
@@ -110,6 +122,7 @@
         private System.Windows.Forms.TextBox txtsob;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtkq;
+        private System.Windows.Forms.Button btncong;
     }
 }
 
